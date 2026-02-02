@@ -57,6 +57,20 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS RESET */
 
 
+/* CUSTOM PROPERTIES */
+
+:root {
+    --background-clr: rgba(155, 81, 205, 0.967);
+    --border-clr: 2px solid rgb(234, 234, 84);
+    --text-clr: #FFFFFF;
+
+    /* fonts */
+    --font-main: 'roboto', sans-serif;
+    --font-main-size: 2em;
+}
+
+
+
 .container {
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -64,12 +78,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .container div {
     min-height: 100px;
-    background: rgba(222, 114, 214, 0.886);
-    border: 2px solid lime;
+    background: var(--background-clr);
+    border: var(--border-clr);
+    color: var(--text-clr);
+
+    text-align: center;
+    font: var(--font-main);
+    font-size: var(--font-main-size);
 }
 
 .sidebar {
-    grid-row: 2 / 4;
+    grid-row: 1 / 3;
 }
 
 .header {
