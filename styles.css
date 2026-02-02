@@ -60,13 +60,16 @@ h1, h2, h3, h4, h5, h6 {
 /* CUSTOM PROPERTIES */
 
 :root {
+    /* colors */
     --background-clr: rgba(155, 81, 205, 0.967);
     --border-clr: 2px solid rgb(234, 234, 84);
     --text-clr: #FFFFFF;
 
     /* fonts */
     --font-main: 'roboto', sans-serif;
-    --font-main-size: 2em;
+    --font-main-size: 1em;
+    --font-large-size: 2em;
+    --font-bold: bolder;
 }
 
 
@@ -98,6 +101,12 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 2;
 }
 
-.card-container {
-    
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-container .cards {
+    height: 200px;
 }
