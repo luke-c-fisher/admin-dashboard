@@ -55,3 +55,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* CSS RESET */
+
+
+.container {
+    display: grid;
+}
+
+.container > * {
+    min-height: 100px;
+    background: rgba(222, 114, 214, 0.886);
+    border: 2px solid lime;
+}
