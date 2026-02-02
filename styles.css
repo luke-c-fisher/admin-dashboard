@@ -61,7 +61,8 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
     /* colors */
-    --background-clr: rgba(155, 81, 205, 0.967);
+    --background-clr-primary: #2a2a2a;
+    --background-clr-secondary: #e8e8e8;
     --border-clr: 2px solid rgb(234, 234, 84);
     --text-clr: #FFFFFF;
 
@@ -80,13 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container div {
-    background: var(--background-clr);
+    background: var(--background-clr-primary);
     border: var(--border-clr);
     color: var(--text-clr);
 
     font: var(--font-main);
     font-weight: bold;
 }
+
+/* SIDEBAR */
 
 .sidebar {
     grid-column: 1;
@@ -110,11 +113,29 @@ h1, h2, h3, h4, h5, h6 {
     gap: 15px;
 }
 
+/* HEADER */
 
 .header {
     grid-column: 2;
 }
 
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
+}
+
+.header-top input[id="search-bar"] {
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--background-clr-secondary);
+    color: #FFFFFF;
+
+}
+
+
+/*  */
 
 .main-content {
     grid-column: 2;
