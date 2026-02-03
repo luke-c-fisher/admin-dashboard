@@ -116,22 +116,34 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER */
 
 .header {
-    grid-column: 2;
+  grid-column: 2;
+}
+
+.header ul {
+  list-style-type: none;
 }
 
 .header-top {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 1em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1em;
 }
 
-.header-top input[id="search-bar"] {
-    padding: 5px;
-    border-radius: 15px;
-    border: none;
-    background-color: var(--background-clr-secondary);
-
+.header-top input {
+  padding: 5px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--background-clr-secondary);
 }
+
+.header-top ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #FFFFFF;
+}
+
+
+
 /*  */
 
 .main-content {
