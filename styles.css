@@ -190,5 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .misc-container {
+    grid-column: 2;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
