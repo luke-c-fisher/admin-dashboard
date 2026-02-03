@@ -142,7 +142,30 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.header-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+.header-bottom .greeting-name {
+  font-size: 1.5em;
+
+}
+
+.header-bottom ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header-bottom button {
+  padding: 15px;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.header-bottom button:hover {
+  box-shadow: 2px 2px 5px lightgray;
+}
 
 /*  */
 
