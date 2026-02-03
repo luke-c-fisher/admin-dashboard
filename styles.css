@@ -69,7 +69,8 @@ h1, h2, h3, h4, h5, h6 {
     /* fonts */
     --font-main: 'roboto', sans-serif;
     --font-size-large: 2.5rem;   
-    --font-size-base: 1rem;  
+    --font-size-base: 1rem;
+    --font-size-small: 15px;
 }
 
 
@@ -155,6 +156,8 @@ h1, h2, h3, h4, h5, h6 {
 .header-bottom ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-size: var(--font-size-small);
+
 }
 
 .header-bottom button {
