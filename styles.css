@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px;
+  padding-top: 1.5em;
 }
 
 .header-bottom .greeting-container {
@@ -205,19 +205,30 @@ h1, h2, h3, h4, h5, h6 {
   align-items: start;
 }
 
+.header-bottom .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-
-
-.header-bottom ul {
+.button-container ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: var(--font-size-small);
+  gap: 15px;
 }
 
-.header-bottom button {
-  padding: 15px;
-  border-radius: 1em;
+.button-container button {
+  width: 120px;
+  padding: 10px;
+  border-radius: 2em;
+  border: none;
   cursor: pointer;
+
+  background-color: var(--background-clr-primary);
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: #FFFFFF;
 }
 
 .header-bottom button:hover {
