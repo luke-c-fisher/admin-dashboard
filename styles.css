@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     /* colors */
     --background-clr-primary: #2d2142;
     --background-clr-secondary: #1e1633;
-    --background-clr-light: #6a4c93;
+    --background-clr-accent: #6a4c93;
     --border-clr: 2px solid rgb(234, 234, 84);
     --text-clr: #FFFFFF;
 
@@ -134,8 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   grid-column: 2;
-  background-color: var(--background-clr-light);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--background-clr-accent);
 }
 
 .header ul {
@@ -184,18 +183,35 @@ h1, h2, h3, h4, h5, h6 {
 .header-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 10px;
 }
 
-.header-bottom .greeting-name {
+.header-bottom .greeting-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   font-size: 1.5em;
-
 }
+
+.greeting-container i {
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 3em;
+}
+
+.greeting-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+
 
 .header-bottom ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: var(--font-size-small);
-
 }
 
 .header-bottom button {
