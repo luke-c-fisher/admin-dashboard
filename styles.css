@@ -85,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
 .container div {
     /* border: var(--border-clr); */
     color: var(--text-clr);
-
     font: var(--font-main);
 }
 
@@ -149,16 +148,37 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1em;
 }
 
+.header-top .search-container {
+  display: flex;
+}
+
 .header-top input {
   padding: 5px;
   border-radius: 15px;
+  flex: 1;
   border: none;
+}
+
+.search-container i {
+  margin-top: 10px;
+  margin-right: 5px;
 }
 
 .header-top ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  font-weight: bolder;
+  font-size: 1.2em;
   color: #FFFFFF;
+}
+
+.header-top li {
+  cursor: pointer;
+}
+
+.header-top i {
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .header-bottom {
