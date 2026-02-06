@@ -285,6 +285,21 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: none;
 }
 
+.announcements,
+.trending {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+}
+
+.announcements p,
+.trending p {
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding: 0.5em;
+  /* text-align: center; */
+}
+
 .announcements ul, 
 .trending ul {
   display: flex;
@@ -292,5 +307,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
   text-align: start;
   font-size: var(--font-size-base);
+  background-color: var(--background-clr-secondary);
   border: 2px solid dodgerblue;
 }
