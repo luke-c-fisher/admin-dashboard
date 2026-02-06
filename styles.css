@@ -188,7 +188,8 @@ h1, h2, h3, h4, h5, h6 {
 .header-bottom .greeting-container {
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  border-radius: 1em;
+  padding: 10px;
   gap: 15px;
   font-size: 1.5em;
 }
@@ -256,8 +257,9 @@ h1, h2, h3, h4, h5, h6 {
 .card-container .card {
     height: 200px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 1em;
     background-color: var(--background-clr-secondary);
+    box-shadow: 2.3px 4.6px 4.6px hsl(0deg 0% 0% / 0.43);
 }
 
 .card .card-title {
