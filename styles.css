@@ -290,13 +290,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 .announcements .misc-title,
 .trending .misc-title {
   font-size: 1.5em;
   font-weight: bolder;
   padding: 0.5em;
-  gap: 10px;
 }
 
 .announcements .sub-titles,
@@ -309,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 .trending .misc-card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2em;
   font-size: 12px;
   padding: 1em;
   border-radius: 1em;
