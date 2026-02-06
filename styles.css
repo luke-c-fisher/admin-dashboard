@@ -109,8 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-menu ul {
     display: grid;
     grid-template-rows: repeat(9, 1fr);
-    justify-content: start;
-    font-size: var(--font-size-base);
     font-weight: bolder;
     font-size: 1.2em;
     gap: 15px;
@@ -118,9 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-menu li {
-  display: flex;
-  flex: 1;
-  align-items: flex-start;
   cursor: pointer;
 }
 
@@ -299,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .announcements .sub-titles,
 .trending .sub-titles {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bolder;
 }
 
@@ -307,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 .trending .misc-card {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 2em;
   font-size: 12px;
   padding: 1em;
@@ -314,6 +310,18 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--background-clr-secondary);
   box-shadow: 2.3px 4.6px 4.6px hsl(0deg 0% 0% / 0.43);
 }
+
+.misc-card ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding: 10px;
+  gap: 20px;
+  list-style-type: none;
+  justify-items: start;
+}
+
 
 
 
